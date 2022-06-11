@@ -1,0 +1,285 @@
+<html>
+	<head>
+		<title>New tab</title>
+		<link rel="icon" href="favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/indexGlobal.css" rel="preload"/>
+		<link rel="stylesheet" href="css/indexSmall.css" media="screen and (max-width: 600px)" rel="preload"/>
+		<link rel="stylesheet" href="css/indexLarge.css" media="screen and (min-width: 600px)" rel="preload"/>
+		<link rel="stylesheet" href="css/colorPalletBlur.css" rel="preload"/>
+
+		<script src="js/jquery.js"></script>
+        <script src="js/globalFunction.js"></script>
+		<script src="js/handle.js"></script>
+		<script src="js/search.js"></script>
+		<script src="js/news.js"></script>
+	</head>
+	<body oncontextmenu="return true;">
+	<div class="background-image"></div>
+	
+	<!-- Categoriebalk -->
+	<div class="sidebar">
+		<div class="CategoryBar">
+			<div class="CategoryBarPlacement">
+				<div class="catPanel">
+					<div class="CategoryBarItem catOption Cathover CategoryBarItemActive" data-link="algemeen"><img class="cat-symbol" src="img/symbols/global.svg"/><p >Algemeen</p></div>
+					<div class="CategoryBarItem catOption Cathover" data-link="social"><img class="cat-symbol" src="img/symbols/social.svg"/><p>Social</p></div>
+					<div class="CategoryBarItem catOption Cathover" data-link="crea"><img class="cat-symbol" src="img/symbols/creative.svg"/><p>Design</p></div>
+					<div class="CategoryBarItem catOption Cathover" data-link="financieel"><img class="cat-symbol" src="img/symbols/euro.svg"/><p>Financieel</p></div>
+					<div class="CategoryBarItem catOption Cathover" data-link="news"><img class="cat-symbol" src="img/symbols/newspaper.svg"/><p>Nieuws</p></div>
+					<div class="CategoryBarItem catOption Cathover" data-link="data"><img class="cat-symbol" src="img/symbols/server.svg"/><p>Data</p></div>
+					<div class="CategoryBarItem catOption Cathover" data-link="info"><img class="cat-symbol" src="img/symbols/tools.svg"/><p>Overig</p></div>
+					<div class="CategoryBarItem catBarSettingsButton Cathover"> <img class="cat-symbol" src="img/symbols/gear.svg"/><p>Instellingen</p></div>
+				</div>
+			</div>
+		</div>
+		<div class="settings">
+			<div class="CloseBar"><p>x</p></div>
+			<div class="settingsContent">
+				<h1>Instellingen</h1>
+				<h2>Algemeen</h2>
+				<div class="catBarMenuOption">
+					<p class="catBarText">Focus</p>
+					<div class="slider noDistractOption sliderOff" data-value="0" data-storage="nodistract" onclick="noDistraction('noDistractOption')">
+						<div class="sliderButton"></div>
+					</div>
+				</div>
+				<div class="catBarMenuOption">
+					<p class="catBarText">Verberg objecten</p>
+					<div class="slider hideObjects sliderOff" data-value="1" data-storage="hideObjects" onclick="hideObjects('hideObjects')">
+						<div class="sliderButton"></div>
+					</div>
+				</div>
+				<div class="catBarMenuOption">
+					<p class="catBarText">Ping check</p>
+					<div class="slider pingCheck sliderOff" data-value="1" data-storage="pingCheck" onclick="pingCheck('pingCheck')">
+						<div class="sliderButton"></div>
+					</div>
+				</div>
+				<h2>Zoeken</h2>
+				<p class="catBarText">Standaard zoekmachine</p>
+				<select class="defaultSearchSelector" onChange="changeSearchEngine()"></select>
+			</div>
+		</div>
+	</div>
+	
+	<!-- searchbar -->
+	<div class="content">
+		<div class="searchbar">
+			<div class="SearchBarVert">
+				<div class="SearchBarHor">
+					<!-- <div class="clock NotSelectable"><p></p></div> -->
+					<div class="searchEngineIndicator NotSelectable"><p></p></div>
+					<input class="Searchfield" placeholder="Search"></input>
+					<div class="blackHover SearchButton NotSelectable"><img src="img/symbols/Black_zoeken.png"/></div>
+					
+					<!-- advanced search menu -->
+					<div class="AdvancedSearch NotSelectable">
+						<div class="ASGroup">
+							<div class="ASGGroupHeader"><p>Zoeksnelkoppelingen</p></div>
+							<div class="ASGroupContent searchShortcuts"></div>
+						</div>
+						<div class="ASGroup ">
+							<div class="ASGGroupHeader"><p>Zoekoperatoren</p></div>
+							<div class="ASGroupContent searchOptions"></div>
+						</div>
+					</div>
+					<div class="searchOptionsSuggestion NotSelectable">
+						test
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- shortcuts -->
+		<div class="linkgroups">
+			<!-- Algemeen -->
+			<div class="linkgroup active" data-type="algemeen">
+				<div class="link-tile Slink link-hover href" data-href="https://www.buienradar.nl"><div class="link-content"><p class="linkTitle">Buienradar<p></div></div>
+				<div class="link-tile Mlink link-hover distract">
+					<div class="link-content"><p class="linkTitle">Forums<p></div>
+					<div data-linkGroupWidth="2" class="Mlink-group">
+						<div class="CloseBar"><p>x</p></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://answers.microsoft.com/nl-nl"><div class="link-content"><p class="linkTitle">Microsoft Forums</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://forum.openstreetmap.org"><div class="link-content"><p class="linkTitle">OSM forums</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://community.openstreetmap.org"><div class="link-content"><p class="linkTitle">OSM community</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://forum.vivaldi.net"><div class="link-content"><p class="linkTitle">Vivaldi Forums</p></div></div>
+					</div>
+				</div>
+				<div class="link-tile Slink link-hover href" data-href="https://play.geforcenow.com/mall/#/layout/games"><div class="link-content"><p class="linkTitle">Geforce Now<p></div></div>
+				<div class="link-tile Slink link-hover href" data-href="https://github.com"><div class="link-content"><p class="linkTitle">Github</p></div></div>
+				<div class="link-tile Mlink link-hover">
+					<div class="link-content"><p class="linkTitle">Maps<p></div>
+					<div class="Mlink-group" data-linkGroupWidth="2">
+						<div class="CloseBar"><p>x</p></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.google.nl/maps"><div class="link-content"><p class="linkTitle">Google maps</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://graphhopper.com/maps/"><div class="link-content"><p class="linkTitle">Graphhopper</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.mapillary.com/app"><div class="link-content"><p class="linkTitle">Mapillary</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.openstreetmap.org"><div class="link-content"><p class="linkTitle">OpenStreetMap</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://kartaview.org"><div class="link-content"><p class="linkTitle">Kartaview</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.qwant.com/maps"><div class="link-content"><p class="linkTitle">Qwant maps</p></div></div>
+					</div>
+				</div>
+				<div class="link-tile Mlink link-hover">
+					<div class="link-content"><p class="linkTitle">Microsoft<p></div>
+					<div class="Mlink-group" data-linkGroupWidth="3">
+						<div class="CloseBar"><p>x</p></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.outlook.com"><div class="link-content"><p class="linkTitle">Outlook</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.onedrive.com"><div class="link-content"><p class="linkTitle">Onedrive</p></div></div>
+					</div>
+				</div>
+				<div class="link-tile Mlink link-hover">
+					<div class="link-content"><p class="linkTitle">OSM<p></div>
+					<div class="Mlink-group" data-linkGroupWidth="3">
+						<div class="CloseBar"><p>x</p></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://overpass-turbo.eu"><div class="link-content"><p class="linkTitle">Overpass turbo</p></div></div>
+					</div>
+				</div>
+				<div class="link-tile Slink link-hover href" data-href="https://deezer.com"><div class="link-content"><p class="linkTitle">Deezer</p></div></div>
+				<div class="link-tile Mlink link-hover">
+					<div class="link-content"><p class="linkTitle">Talen<p></div>
+					<div data-linkGroupWidth="2" class="Mlink-group">
+						<div class="CloseBar"><p>x</p></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.deepl.com/translator"><div class="link-content"><p class="linkTitle">DeepL</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://nl.forvo.com"><div class="link-content"><p class="linkTitle">Forvo</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://translate.google.com"><div class="link-content"><p class="linkTitle">Google Translate</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.linguee.com"><div class="link-content"><p class="linkTitle">Linguee</p></div></div>
+					</div>
+				</div>
+				<div class="link-tile Slink link-hover href" data-href="https://mail.tutanota.com"><div class="link-content"><p class="linkTitle">Tutanota</p></div></div>
+				<div class="link-tile Mlink link-hover">
+					<div class="link-content"><p class="linkTitle">Video<p></div>
+					<div data-linkGroupWidth="2" class="Mlink-group">
+						<div class="CloseBar"><p>x</p></div>
+						<div class="Mlink-item Mlink-hover href distract" data-href="https://curiositystream.com"><div class="link-content"><p class="linkTitle">CuriosityStream</p></div></div>
+						<div class="Mlink-item Mlink-hover href distract" data-href="https://nebula.app"><div class="link-content"><p class="linkTitle">Nebula</p></div></div>
+						<div class="Mlink-item Mlink-hover href distract" data-href="https://netflix.com"><div class="link-content"><p class="linkTitle">Netflix</p></div></div>
+						<div class="Mlink-item Mlink-hover href distract" data-href="https://app.nlziet.nl"><div class="link-content"><p class="linkTitle">NLZiet</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.youtube.com"><div class="link-content"><p class="linkTitle">Youtube</p></div></div>
+						<div class="Mlink-item Mlink-hover href distract" data-href="http://www.ziggogo.tv"><div class="link-content"><p class="linkTitle">Ziggo Go</p></div></div>
+					</div>
+				</div>
+			</div>
+			<!--financieel-->
+			<div class="linkgroup" data-type="financieel">
+				<div class="link-tile Mlink link-hover distract">
+					<div class="link-content"><p class="linkTitle">Crypto<p></div>
+					<div data-linkGroupWidth="1" class="Mlink-group">
+						<div class="CloseBar"><p>x</p></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.coinbase.com"><div class="link-content"><p class="linkTitle">Coinbase</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://coinmarketcap.com"><div class="link-content"><p class="linkTitle">CoinmarketCap</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://app.celsius.network"><div class="link-content"><p class="linkTitle">Celsius</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://app.uniswap.org/#/swap"><div class="link-content"><p class="linkTitle">Uniswap</p></div></div>
+					</div>
+				</div>
+				<div class="link-tile link-hover href" data-href="https://www.abnamro.nl/nl/prive/index.html"><div class="link-content"><p class="linkTitle">ABN Amro</p></div></div>
+				<div class="link-tile link-hover href distract" data-href="https://www.investing.com"><div class="link-content"><p class="linkTitle">Investing.com</p></div></div>
+				<div class="link-tile link-hover href distract" data-href="https://www.icscards.nl/abnamro"><div class="link-content"><p class="linkTitle">ICS cards</p></div></div>
+				<div class="link-tile Mlink link-hover distract">
+					<div class="link-content"><p class="linkTitle">Overheid<p></div>
+					<div data-linkGroupWidth="1" class="Mlink-group">
+						<div class="CloseBar"><p>x</p></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.belastingdienst.nl/wps/wcm/connect/nl/home/home"><div class="link-content"><p class="linkTitle">Belastingdienst</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://mijn.overheid.nl"><div class="link-content"><p class="linkTitle">Mijn overheid</p></div></div>
+					</div>
+				</div>
+				<div class="link-tile link-hover href" data-href="https://www.paypal.com/myaccount/home"><div class="link-content"><p class="linkTitle">Paypal</p></div></div>
+				<div class="link-tile Mlink link-hover distract">
+					<div class="link-content"><p class="linkTitle">Web winkels<p></div>
+					<div data-linkGroupWidth="1" class="Mlink-group">
+						<div class="CloseBar"><p>x</p></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.bol.com"><div class="link-content"><p class="linkTitle">Bol.com</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.coolblue.nl"><div class="link-content"><p class="linkTitle">Coolblue</p></div></div>
+					</div>
+				</div>
+			</div>
+			<!--creative-->
+			<div class="linkgroup" data-type="crea">
+				<div class="link-tile Mlink link-hover">
+					<div class="link-content"><p class="linkTitle">Kleuren<p></div>
+					<div data-linkGroupWidth="2" class="Mlink-group">
+						<div class="CloseBar"><p>x</p></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.w3schools.com/colors/colors_picker.asp"><div class="link-content"><p class="linkTitle">HTML color picker</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.w3schools.com/colors/colors_converter.asp"><div class="link-content"><p class="linkTitle">Color converter</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.w3schools.com/colors/colors_hsl.asp"><div class="link-content"><p class="linkTitle">HSl color picker</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="http://paletton.com"><div class="link-content"><p class="linkTitle">Paletton</p></div></div>
+					</div>
+				</div>
+			</div>
+			<!--Social-->
+			<div class="linkgroup distract" data-type="social">
+				<div class="link-tile link-hover href" data-href="https://nl.pinterest.com"><div class="link-content"><p class="linkTitle">Pinterest</p></div></div>
+				<div class="link-tile link-hover href" data-href="https://lemmy.ml"><div class="link-content"><p class="linkTitle">Lemmy</p></div></div>
+				<div class="link-tile link-hover href" data-href="https://mastodon.online"><div class="link-content"><p class="linkTitle">Mastodon</p></div></div>
+				<div class="link-tile link-hover href" data-href="https://mewe.com"><div class="link-content"><p class="linkTitle">MeWe</p></div></div>
+				<div class="link-tile link-hover href" data-href="https://www.reddit.com"><div class="link-content"><p class="linkTitle">Reddit</p></div></div>
+				<div class="link-tile link-hover href" data-href="https://web.whatsapp.com"><div class="link-content"><p class="linkTitle">Whatsapp web</p></div></div>
+
+			</div>
+			<!--Nieuws-->
+			<div class="linkgroup distract" data-type="news">
+				<div class="link-tile link-hover href" data-href="https://reader.miniflux.app/unread"><div class="link-content"><p class="linkTitle">Miniflux</p></div></div>
+				<div class="link-tile Mlink link-hover">
+					<div class="link-content"><p class="linkTitle">Nederlands<p></div>
+					<div data-linkGroupWidth="2" class="Mlink-group">
+						<div class="CloseBar"><p>x</p></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.1limburg.nl"><div class="link-content"><p class="linkTitle">1Limburg</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="http://www.nu.nl"><div class="link-content"><p class="linkTitle">Nu.nl</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.rtlnieuws.nl"><div class="link-content"><p class="linkTitle">RTL nieuws</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.tvgids.nl"><div class="link-content"><p class="linkTitle">Tvgids</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.gelderlander.nl/wageningen/"><div class="link-content"><p class="linkTitle">Gelderlander Wageningen</p></div></div>
+					</div>
+				</div>
+				<div class="link-tile link-hover href" data-href="https://192.168.178.35/tt-rss"><div class="link-content"><p class="linkTitle">TT rss</p></div></div>
+			</div>
+			<!--Data-->
+			<div class="linkgroup" data-type="data">
+				<div class="link-tile link-hover href" data-href="https://epsg.io"><div class="link-content"><p class="linkTitle">EPSG</p></div></div>
+				<div class="link-tile Mlink link-hover">
+					<div class="link-content"><p class="linkTitle">Viewers<p></div>
+					<div data-linkGroupWidth="2" class="Mlink-group">
+						<div class="CloseBar"><p>x</p></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://bgtviewer.nl"><div class="link-content"><p class="linkTitle">BGT viewer</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.pdok.nl/viewer/"><div class="link-content"><p class="linkTitle">Pdok viewer</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://satellietdataportaal.nl"><div class="link-content"><p class="linkTitle">Satelliet data portaal</p></div></div>
+					</div>
+				</div>
+				<div class="link-tile Mlink link-hover">
+					<div class="link-content"><p class="linkTitle">Data portalen<p></div>
+					<div data-linkGroupWidth="2" class="Mlink-group">
+						<div class="CloseBar"><p>x</p></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://data.overheid.nl"><div class="link-content"><p class="linkTitle">Data overheid</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="http://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/home"><div class="link-content"><p class="linkTitle">Nationaal georegister</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://www.naturalearthdata.com"><div class="link-content"><p class="linkTitle">Natural earth data</p></div></div>
+						<div class="Mlink-item Mlink-hover href" data-href="https://pdok.nl"><div class="link-content"><p class="linkTitle">Pdok</p></div></div>
+					</div>
+				</div>
+			</div>
+			<!--Info-->
+			<div class="linkgroup" data-type="info">
+				<div class="link-tile link-hover href" data-href="popupPages/AltCodes.html"><div class="link-content"><p class="linkTitle">Alt codes</p></div></div>
+				<div class="link-tile link-hover href" data-href="https://chrome.google.com/webstore/category/extensions"><div class="link-content"><p class="linkTitle">Chrome store</p></div></div>
+				<div class="link-tile link-hover href" data-href="popupPages/ColorMerge.html"><div class="link-content"><p class="linkTitle">Color Merge</p></div></div>
+				<div class="link-tile link-hover href" data-href="popupPages/ExcelNed.html"><div class="link-content"><p class="linkTitle">ExcelNed</p></div></div>
+				<div class="link-tile link-hover href" data-href="https://play.google.com/store"><div class="link-content"><p class="linkTitle">Google play store</p></div></div>
+				<div class="link-tile link-hover href" data-href="popupPages/Papierformaten.html"><div class="link-content"><p class="linkTitle">Papierformaten</p></div></div>		
+			</div>
+		</div>
+		
+		<div class="newsFeed widget">
+			<div class="newsFeedContent widgetContent">
+				<div class="newsFeedHeader widgetHeader"><p>News</p></div>
+				<div class="newsFeedList widgetListParent">
+	
+				</div>
+			</div>
+		</div>	
+		
+		</div>
+	</div>
+    <!-- Message banner-->
+    <div class="Message_banner"></div>    
+	
+	<script src="js/startup.js"></script>
+	</body>
+</html>

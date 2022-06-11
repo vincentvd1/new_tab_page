@@ -1,0 +1,19 @@
+:root{ 
+	--main-bs:1px 1px 2px rgba(14,14,14,1);
+	--main-bg-light-trans:rgba(77,77,77,1);
+	--main-bg-dark-trans: rgba(14,14,14,1);
+	--main-bg-dark:rgba(16, 17, 35,1);
+	--main-light-color:#ccc;
+	--text-light: #ccc;
+	--text-dark:#222;
+	--hoverColor: rgba(0, 61, 102, 0.75);
+	--hoverTextColor:#ccc;
+	--mainBgBlur: blur(50px);
+}
+
+body{
+	/* background: url(../img/wallpapers/wallpaper14.jpg); */
+	background:rgb(255,255,255);
+	background-size:100% 100%;
+}
+

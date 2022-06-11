@@ -1,0 +1,1838 @@
+<html>
+	<head>
+		<title>ExcelNed</title>
+		<link rel="icon" type="image/png" href="../img/home.ico" />
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<style>
+			body{
+				margin:10px;
+				padding:0px;
+				text-align:left;
+				font-family:Arial;
+				overflow-x:hidden;
+				background: rgba(26,26,26,1);
+				color:#ccc;
+			}
+			.InfoCardHeader{
+					font-size:20px;
+					padding:5px;
+					border-bottom:1px solid #222;
+                    margin-bottom:10px;
+				}
+			table  td, table th{
+				min-width:70px;
+				text-align:center;
+				padding:5px;
+                border-bottom: 1px solid #ccc;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="InfoCardHeader">Excel Nederlands</div>
+		<table>
+            <colgroup><col style="width: 48pt;" span="3" width="64"></col> </colgroup> 
+            <tbody>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt; width: 48pt;" width="64" height="20"><strong>Functie</strong></td>
+            <td style="width: 48pt;" width="64"><strong>Function</strong></td>
+            <td style="width: 48pt;" width="64"><strong>Beschrijving</strong></td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20"><strong>Automatiseringsfuncties en functies in   invoegtoepassingen</strong></td>
+            <td><strong>Add-in and Automation functions</strong></td>
+            <td><strong></strong></td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ROEPEN</td>
+            <td>CALL</td>
+            <td>Roept een procedure aan in een DLL (Dynamic Link Library) of codebron</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">EUROCONVERT</td>
+            <td>EUROCONVERT</td>
+            <td>Met deze werkbladfunctie kunt u een waarde omrekenen naar euro's, euro's   omrekenen naar valuta's van andere eurolidstaten of een valuta van een   eurolidstaat omrekenen naar een valuta van een andere eurolidstaat, waarbij   de euro als tussenvaluta wordt gebruikt (driehoeksconversie)</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DRAAITABEL.OPHALEN</td>
+            <td>GETPIVOTDATA</td>
+            <td>Geeft gegevens uit een draaitabelrapport als resultaat</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">REGISTRATIE.ID</td>
+            <td>REGISTER.ID</td>
+            <td>Bepaalt de registratie-id van de opgegeven DLL (Dynamic Link Library) of   de codebron die eerder is geregistreerd</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SQL.REQUEST</td>
+            <td>SQL.REQUEST</td>
+            <td>Maakt een verbinding met een externe gegevensbron, voert een query uit   vanuit een werkblad en geeft vervolgens het resultaat als een matrix zonder   dat u een macro hoeft te programmeren</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20"><strong>Kubusfuncties</strong></td>
+            <td><strong>Cube functions</strong></td>
+            <td><strong></strong></td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">KUBUSKPILID</td>
+            <td>CUBEKPIMEMBER</td>
+            <td>Retourneert de naam, eigenschap en waarde van een KPI   (prestatie-indicator) en geeft de naam en de eigenschap in de cel weer. Een   KPI is een meetbare waarde, zoals de maandelijkse brutowinst of de omzet per   kwartaal per werknemer, die wordt gebruikt om de prestaties van een   organisatie te bewaken</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">KUBUSLID</td>
+            <td>CUBEMEMBER</td>
+            <td>Retourneert een lid of tupel in een kubushi&euml;rarchie. Wordt gebruikt om te   controleren of het lid of de tupel in de kubus aanwezig is</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">KUBUSLIDEIGENSCHAP</td>
+            <td>CUBEMEMBERPROPERTY</td>
+            <td>Retourneert de waarde van een lideigenschap in de kubus. Wordt gebruikt   om te controleren of de lidnaam in de kubus bestaat en retourneert de   opgegeven eigenschap voor dit lid</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">KUBUSGERANGSCHIKTLID</td>
+            <td>CUBERANKEDMEMBER</td>
+            <td>Retourneert het zoveelste, gerangschikte lid in een set. Wordt gebruikt   om een of meer elementen in een set te retourneren, zoals de tien beste   verkopers of de tien beste studenten</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">KUBUSSET</td>
+            <td>CUBESET</td>
+            <td>Definieert een berekende set leden of tupels door een ingestelde   expressie naar de kubus op de server te sturen, alwaar de set wordt gemaakt   en vervolgens wordt geretourneerd naar Microsoft Office Excel</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">KUBUSSETAANTAL</td>
+            <td>CUBESETCOUNT</td>
+            <td>Retourneert het aantal onderdelen in een set</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">KUBUSWAARDE</td>
+            <td>CUBEVALUE</td>
+            <td>Retourneert een samengestelde waarde van een kubus</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20"><strong>Databasefuncties</strong></td>
+            <td><strong>Database functions</strong></td>
+            <td><strong></strong></td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DBGEMIDDELDE</td>
+            <td>DAVERAGE</td>
+            <td>Berekent de gemiddelde waarde in geselecteerde databasegegevens</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DBAANTAL</td>
+            <td>DCOUNT</td>
+            <td>Telt de cellen met getallen in een database</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DBAANTALC</td>
+            <td>DCOUNTA</td>
+            <td>Telt de niet-lege cellen in een database</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DBLEZEN</td>
+            <td>DGET</td>
+            <td>Retourneert &eacute;&eacute;n record dat voldoet aan de opgegeven criteria uit een   database</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DBMAX</td>
+            <td>DMAX</td>
+            <td>Retourneert de maximumwaarde in de geselecteerde databasegegevens</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DBMIN</td>
+            <td>DMIN</td>
+            <td>Retourneert de minimumwaarde in de geselecteerde databasegegevens</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DBPRODUCT</td>
+            <td>DPRODUCT</td>
+            <td>Vermenigvuldigt de waarden in een bepaald veld van de records die voldoen   aan de criteria in een database</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DBSTDEV</td>
+            <td>DSTDEV</td>
+            <td>Maakt een schatting van de standaarddeviatie op basis van een steekproef   uit geselecteerde databasegegevens</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DBSTDEVP</td>
+            <td>DSTDEVP</td>
+            <td>Berekent de standaarddeviatie op basis van de volledige populatie van   geselecteerde databasegegevens</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DBSOM</td>
+            <td>DSUM</td>
+            <td>Telt de getallen uit een kolom records in de database op die voldoen aan   de criteria</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DBVAR</td>
+            <td>DVAR</td>
+            <td>Maakt een schatting van de variantie op basis van een steekproef uit   geselecteerde databasegegevens</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DBVARP</td>
+            <td>DVARP</td>
+            <td>Berekent de variantie op basis van de volledige populatie van   geselecteerde databasegegevens</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20"><strong>Datum- en tijdfuncties</strong></td>
+            <td><strong>Date and time functions</strong></td>
+            <td><strong></strong></td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DATUM</td>
+            <td>DATE</td>
+            <td>Geeft als resultaat het seri&euml;le getal van een opgegeven datum</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DATUMWAARDE</td>
+            <td>DATEVALUE</td>
+            <td>Converteert een datum in de vorm van tekst naar een serieel getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DAG</td>
+            <td>DAY</td>
+            <td>Converteert een serieel getal naar een dag van de maand</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DAGEN360</td>
+            <td>DAYS360</td>
+            <td>Berekent het aantal dagen tussen twee datums op basis van een jaar met   360 dagen</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ZELFDE.DAG</td>
+            <td>EDATE</td>
+            <td>Geeft als resultaat het seri&euml;le getal van een datum die het opgegeven   aantal maanden voor of na de begindatum ligt</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">LAATSTE.DAG</td>
+            <td>EOMONTH</td>
+            <td>Geeft als resultaat het seri&euml;le getal van de laatste dag van de maand   voor of na het opgegeven aantal maanden</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">UUR</td>
+            <td>HOUR</td>
+            <td>Converteert een serieel getal naar uren</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">MINUUT</td>
+            <td>MINUTE</td>
+            <td>Converteert een serieel naar getal minuten</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">MAAND</td>
+            <td>MONTH</td>
+            <td>Converteert een serieel getal naar een maand</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">NETTO.WERKDAGEN</td>
+            <td>NETWORKDAYS</td>
+            <td>Geeft als resultaat het aantal hele werkdagen tussen twee datums</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">NU</td>
+            <td>NOW</td>
+            <td>Geeft als resultaat het seri&euml;le getal van de huidige datum en tijd</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SECONDE</td>
+            <td>SECOND</td>
+            <td>Converteert een serieel getal naar seconden</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">TIJD</td>
+            <td>TIME</td>
+            <td>Geeft als resultaat het seri&euml;le getal van een bepaald tijdstip</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">TIJDWAARDE</td>
+            <td>TIMEVALUE</td>
+            <td>Converteert de tijd in de vorm van tekst naar een serieel getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">VANDAAG</td>
+            <td>TODAY</td>
+            <td>Geeft als resultaat het seri&euml;le getal van de huidige datum</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">WEEKDAG</td>
+            <td>WEEKDAY</td>
+            <td>Converteert een serieel getal naar een weekdag</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">WEEKNUMMER</td>
+            <td>WEEKNUM</td>
+            <td>Converteert een serieel getal naar een weeknummer</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">WERKDAG</td>
+            <td>WORKDAY</td>
+            <td>Geeft als resultaat het seri&euml;le getal van de datum voor of na een bepaald   aantal werkdagen</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">JAAR</td>
+            <td>YEAR</td>
+            <td>Converteert een serieel getal naar een jaar</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">JAAR.DEEL</td>
+            <td>YEARFRAC</td>
+            <td>Geeft als resultaat het gedeelte van het jaar, uitgedrukt in het aantal   hele dagen tussen begindatum en einddatum</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20"><strong>Technische functies</strong></td>
+            <td><strong>Engineering functions</strong></td>
+            <td><strong></strong></td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BESSEL.Y</td>
+            <td>BESSELI</td>
+            <td>Geeft als resultaat de Bessel-functie Yn(x)</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BESSEL.J</td>
+            <td>BESSELJ</td>
+            <td>Geeft als resultaat de Bessel-functie Jn(x)</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BESSEL.K</td>
+            <td>BESSELK</td>
+            <td>Geeft als resultaat de gewijzigde Bessel-functie Kn(x)</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BESSEL.Y</td>
+            <td>BESSELY</td>
+            <td>Geeft als resultaat de Bessel-functie Yn(x)</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BIN.N.DEC</td>
+            <td>BIN2DEC</td>
+            <td>Converteert een binair getal naar een decimaal getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BIN.N.HEX</td>
+            <td>BIN2HEX</td>
+            <td>Converteert een binair getal naar een hexadecimaal getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BIN.N.OCT</td>
+            <td>BIN2OCT</td>
+            <td>Converteert een binair getal naar een octaal getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">COMPLEX</td>
+            <td>COMPLEX</td>
+            <td>Converteert re&euml;le en imaginaire co&euml;ffici&euml;nten naar een complex getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">CONVERTEREN</td>
+            <td>CONVERT</td>
+            <td>Converteert een getal in de ene maateenheid naar een getal in een andere   maateenheid</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DEC.N.BIN</td>
+            <td>DEC2BIN</td>
+            <td>Converteert een decimaal getal naar een binair getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DEC.N.HEX</td>
+            <td>DEC2HEX</td>
+            <td>Converteert een decimaal getal naar een hexadecimaal getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DEC.N.OCT</td>
+            <td>DEC2OCT</td>
+            <td>Converteert een decimaal getal naar een octaal getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DELTA</td>
+            <td>DELTA</td>
+            <td>Test of twee waarden gelijk zijn</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">FOUTFUNCTIE</td>
+            <td>ERF</td>
+            <td>Geeft als resultaat de foutfunctie</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">FOUT.COMPLEMENT</td>
+            <td>ERFC</td>
+            <td>Geeft als resultaat de complementaire foutfunctie</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">GROTER.DAN</td>
+            <td>GESTEP</td>
+            <td>Test of een getal groter is dan de drempelwaarde</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">HEX.N.BIN</td>
+            <td>HEX2BIN</td>
+            <td>Converteert een hexadecimaal getal naar een binair getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">HEX.N.DEC</td>
+            <td>HEX2DEC</td>
+            <td>Converteert een hexadecimaal getal naar een decimaal getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">HEX.N.OCT</td>
+            <td>HEX2OCT</td>
+            <td>Converteert een hexadecimaal getal naar een octaal getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">C.ABS</td>
+            <td>IMABS</td>
+            <td>Geeft als resultaat de absolute waarde (modulus) van een complex getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">C.IM.DEEL</td>
+            <td>IMAGINARY</td>
+            <td>Geeft als resultaat de imaginaire co&euml;ffici&euml;nt van een complex getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">C.ARGUMENT</td>
+            <td>IMARGUMENT</td>
+            <td>Geeft als resultaat het argument th&egrave;ta, een hoek uitgedrukt in radialen</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">C.TOEGEVOEGD</td>
+            <td>IMCONJUGATE</td>
+            <td>Geeft als resultaat het complexe toegevoegde getal van een complex getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">C.COS</td>
+            <td>IMCOS</td>
+            <td>Geeft als resultaat de cosinus van een complex getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">C.QUOTIENT</td>
+            <td>IMDIV</td>
+            <td>Geeft als resultaat het quoti&euml;nt van twee complexe getallen</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">C.EXP</td>
+            <td>IMEXP</td>
+            <td>Geeft als resultaat de exponent van een complex getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">C.LN</td>
+            <td>IMLN</td>
+            <td>Geeft als resultaat de natuurlijke logaritme van een complex getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">C.LOG10</td>
+            <td>IMLOG10</td>
+            <td>Geeft als resultaat de logaritme met grondtal 10 van een complex getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">C.LOG2</td>
+            <td>IMLOG2</td>
+            <td>Geeft als resultaat de logaritme met grondtal 2 van een complex getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">C.MACHT</td>
+            <td>IMPOWER</td>
+            <td>Geeft als resultaat een complex getal dat is verheven tot de macht van   een geheel getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">C.PRODUCT</td>
+            <td>IMPRODUCT</td>
+            <td>Geeft als resultaat het product van complexe getallen</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">C.REEEL.DEEL</td>
+            <td>IMREAL</td>
+            <td>Geeft als resultaat de re&euml;le co&euml;ffici&euml;nt van een complex getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">C.SIN</td>
+            <td>IMSIN</td>
+            <td>Geeft als resultaat de sinus van een complex getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">C.WORTEL</td>
+            <td>IMSQRT</td>
+            <td>Geeft als resultaat de vierkantswortel van een complex getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">C.VERSCHIL</td>
+            <td>IMSUB</td>
+            <td>Geeft als resultaat het verschil tussen twee complexe getallen</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">C.SOM</td>
+            <td>IMSUM</td>
+            <td>Geeft als resultaat de som van complexe getallen</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">OCT.N.BIN</td>
+            <td>OCT2BIN</td>
+            <td>Converteert een octaal getal naar een binair getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">OCT.N.DEC</td>
+            <td>OCT2DEC</td>
+            <td>Converteert een octaal getal naar een decimaal getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">OCT.N.HEX</td>
+            <td>OCT2HEX</td>
+            <td>Converteert een octaal getal naar een hexadecimaal getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20"><strong>Financi&euml;le functies</strong></td>
+            <td><strong>Financial functions</strong></td>
+            <td><strong></strong></td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SAMENG.RENTE</td>
+            <td>ACCRINT</td>
+            <td>Berekent de opgelopen rente voor een waardepapier waarvan de rente   periodiek wordt uitgekeerd</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SAMENG.RENTE.V</td>
+            <td>ACCRINTM</td>
+            <td>Berekent de opgelopen rente voor een waardepapier waarvan de rente op de   vervaldatum wordt uitgekeerd</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">AMORDEGRC</td>
+            <td>AMORDEGRC</td>
+            <td>Geeft als resultaat de afschrijving voor elke boekingsperiode door een   afschrijvingsco&euml;ffici&euml;nt toe te passen</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">AMORLINC</td>
+            <td>AMORLINC</td>
+            <td>Berekent de afschrijving voor elke boekingsperiode</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">COUP.DAGEN.BB</td>
+            <td>COUPDAYBS</td>
+            <td>Berekent het aantal dagen vanaf het begin van de coupontermijn tot de   stortingsdatum</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">COUP.DAGEN</td>
+            <td>COUPDAYS</td>
+            <td>Geeft als resultaat het aantal dagen in de coupontermijn waarin de   stortingsdatum valt</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">COUP.DAGEN.VV</td>
+            <td>COUPDAYSNC</td>
+            <td>Geeft als resultaat het aantal dagen vanaf de stortingsdatum tot de   volgende couponvervaldatum</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">COUP.DATUM.NB</td>
+            <td>COUPNCD</td>
+            <td>Geeft als resultaat de volgende coupondatum na de stortingsdatum</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">COUP.AANTAL</td>
+            <td>COUPNUM</td>
+            <td>Geeft als resultaat het aantal coupons dat nog moet worden uitbetaald   tussen de stortingsdatum en de vervaldatum</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">COUP.DATUM.VB</td>
+            <td>COUPPCD</td>
+            <td>Geeft als resultaat de vorige couponvervaldatum v&oacute;&oacute;r de stortingsdatum</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">CUM.RENTE</td>
+            <td>CUMIPMT</td>
+            <td>Geeft als resultaat de cumulatieve rente die tussen twee termijnen is   uitgekeerd</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">CUM.HOOFDSOM</td>
+            <td>CUMPRINC</td>
+            <td>Geeft als resultaat de cumulatieve hoofdsom van een lening die tussen   twee termijnen is terugbetaald</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DB</td>
+            <td>DB</td>
+            <td>Geeft als resultaat de afschrijving van activa voor een bepaalde periode   met behulp van de 'fixed declining balance'-methode</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DDB</td>
+            <td>DDB</td>
+            <td>Geeft als resultaat de afschrijving van activa over een bepaalde termijn   met behulp van de 'double declining balance'-methode of een andere methode   die u opgeeft</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DISCONTO</td>
+            <td>DISC</td>
+            <td>Geeft als resultaat het discontopercentage voor een waardepapier</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">EURO.DE</td>
+            <td>DOLLARDE</td>
+            <td>Converteert een prijs in euro's, uitgedrukt in een breuk, naar een prijs   in euro's, uitgedrukt in een decimaal getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">EURO.BR</td>
+            <td>DOLLARFR</td>
+            <td>Converteert een prijs in euro's, uitgedrukt in een decimaal getal, naar   een prijs in euro's, uitgedrukt in een breuk</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DUUR</td>
+            <td>DURATION</td>
+            <td>Geeft als resultaat de gewogen gemiddelde looptijd voor een waardepapier   met periodieke rentebetalingen</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">EFFECT.RENTE</td>
+            <td>EFFECT</td>
+            <td>Geeft als resultaat het effectieve jaarlijkse rentepercentage</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">TW</td>
+            <td>FV</td>
+            <td>Geeft als resultaat de toekomstige waarde van een investering</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">TOEK.WAARDE2</td>
+            <td>FVSCHEDULE</td>
+            <td>Geeft als resultaat de toekomstige waarde van een bepaalde hoofdsom na   het toepassen van een reeks samengestelde rentepercentages</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">RENTEPERCENTAGE</td>
+            <td>INTRATE</td>
+            <td>Geeft als resultaat het rentepercentage voor een volgestort waardepapier</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">IBET</td>
+            <td>IPMT</td>
+            <td>Geeft als resultaat de te betalen rente voor een investering over een   bepaalde termijn</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">IR</td>
+            <td>IRR</td>
+            <td>Geeft als resultaat de interne rentabiliteit voor een reeks cashflows</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ISBET</td>
+            <td>ISPMT</td>
+            <td>Geeft als resultaat de rente die is betaald tijdens een bepaalde termijn   van een investering</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">AANG.DUUR</td>
+            <td>MDURATION</td>
+            <td>Geeft als resultaat de aangepaste Macauley-looptijd voor een   waardepapier, aangenomen dat de nominale waarde &euro; 100 bedraagt</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">GIR</td>
+            <td>MIRR</td>
+            <td>Geeft als resultaat de interne rentabiliteit voor een serie cashflows,   waarbij voor betalingen een ander rentepercentage geldt dan voor inkomsten</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">NOMINALE.RENTE</td>
+            <td>NOMINAL</td>
+            <td>Geeft als resultaat het nominale jaarlijkse rentepercentage</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">NPER</td>
+            <td>NPER</td>
+            <td>Geeft als resultaat het aantal termijnen van een investering</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">NHW</td>
+            <td>NPV</td>
+            <td>Geeft als resultaat de netto huidige waarde van een investering op basis   van een reeks periodieke cashflows en een discontopercentage</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">AFW.ET.PRIJS</td>
+            <td>ODDFPRICE</td>
+            <td>Geeft als resultaat de prijs per &euro; 100 nominale waarde voor een   waardepapier met een afwijkende eerste termijn</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">AFW.ET.REND</td>
+            <td>ODDFYIELD</td>
+            <td>Geeft als resultaat het rendement voor een waardepapier met een   afwijkende eerste termijn</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">AFW.LT.PRIJS</td>
+            <td>ODDLPRICE</td>
+            <td>Geeft als resultaat de prijs per &euro; 100 nominale waarde voor een   waardepapier met een afwijkende laatste termijn</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">AFW.LT.REND</td>
+            <td>ODDLYIELD</td>
+            <td>Geeft als resultaat het rendement voor een waardepapier met een   afwijkende laatste termijn</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BET</td>
+            <td>PMT</td>
+            <td>Geeft als resultaat de periodieke betaling voor een annu&iuml;teit</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">PBET</td>
+            <td>PPMT</td>
+            <td>Geeft als resultaat de afbetaling op de hoofdsom voor een bepaalde   termijn</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">PRIJS.NOM</td>
+            <td>PRICE</td>
+            <td>Geeft als resultaat de prijs per &euro; 100 nominale waarde voor een   waardepapier waarvan de rente periodiek wordt uitgekeerd</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">PRIJS.DISCONTO</td>
+            <td>PRICEDISC</td>
+            <td>Geeft als resultaat de prijs per &euro; 100 nominale waarde voor een   verdisconteerd waardepapier</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">PRIJS.VERVALDAG</td>
+            <td>PRICEMAT</td>
+            <td>Geeft als resultaat de prijs per &euro; 100 nominale waarde voor een   waardepapier waarvan de rente wordt uitgekeerd op de vervaldatum</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">HW</td>
+            <td>PV</td>
+            <td>Geeft als resultaat de huidige waarde van een investering</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">RENTE</td>
+            <td>RATE</td>
+            <td>Geeft als resultaat het periodieke rentepercentage voor een annu&iuml;teit</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">OPBRENGST</td>
+            <td>RECEIVED</td>
+            <td>Geeft als resultaat het bedrag dat op de vervaldatum wordt uitgekeerd   voor een volgestort waardepapier</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">LIN.AFSCHR</td>
+            <td>SLN</td>
+            <td>Geeft als resultaat de lineaire afschrijving van activa over &eacute;&eacute;n termijn</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SYD</td>
+            <td>SYD</td>
+            <td>Geeft als resultaat de afschrijving van activa over een bepaalde termijn   met behulp van de 'Sum-Of-Years-Digits'-methode</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SCHATK.OBL</td>
+            <td>TBILLEQ</td>
+            <td>Geeft als resultaat het rendement op schatkistpapier, dat op dezelfde   manier wordt berekend als het rendement op obligaties</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SCHATK.PRIJS</td>
+            <td>TBILLPRICE</td>
+            <td>Bepaalt de prijs per &euro;&nbsp;100 nominale waarde voor schatkistpapier</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SCHATK.REND</td>
+            <td>TBILLYIELD</td>
+            <td>Berekent het rendement voor schatkistpapier</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">VDB</td>
+            <td>VDB</td>
+            <td>Geeft als resultaat de afschrijving van activa over een gehele of   gedeeltelijke termijn met behulp van de 'declining balance'-methode</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">IR.SCHEMA</td>
+            <td>XIRR</td>
+            <td>Berekent de interne rentabiliteit voor een betalingsschema van cashflows</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">NHW2</td>
+            <td>XNPV</td>
+            <td>Berekent de huidige nettowaarde voor een betalingsschema van cashflows</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">RENDEMENT</td>
+            <td>YIELD</td>
+            <td>Geeft als resultaat het rendement voor een waardepapier waarvan de rente   periodiek wordt uitgekeerd</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">REND.DISCONTO</td>
+            <td>YIELDDISC</td>
+            <td>Geeft als resultaat het jaarlijkse rendement voor een verdisconteerd   waardepapier, bijvoorbeeld schatkistpapier</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">REND.VERVAL</td>
+            <td>YIELDMAT</td>
+            <td>Geeft als resultaat het jaarlijkse rendement voor een waardepapier   waarvan de rente wordt uitgekeerd op de vervaldatum</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20"><strong>Informatiefuncties</strong></td>
+            <td><strong>Information functions</strong></td>
+            <td><strong></strong></td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">CEL</td>
+            <td>CELL</td>
+            <td>Geeft als resultaat informatie over de opmaak, locatie of inhoud van een   cel</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">TYPE.FOUT</td>
+            <td>ERROR.TYPE</td>
+            <td>Geeft als resultaat een getal dat overeenkomt met een van de foutwaarden   van Microsoft Excel</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">INFO</td>
+            <td>INFO</td>
+            <td>Geeft als resultaat informatie over de huidige besturingsomgeving</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ISLEEG</td>
+            <td>ISBLANK</td>
+            <td>Geeft als resultaat WAAR als de waarde leeg is</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ISFOUT2</td>
+            <td>ISERR</td>
+            <td>Geeft als resultaat WAAR als de waarde een foutwaarde is, met   uitzondering van #N/B</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ISFOUT</td>
+            <td>ISERROR</td>
+            <td>Geeft als resultaat WAAR als de waarde een foutwaarde is</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">IS.EVEN</td>
+            <td>ISEVEN</td>
+            <td>Geeft als resultaat WAAR als het getal even is</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ISLOGISCH</td>
+            <td>ISLOGICAL</td>
+            <td>Geeft als resultaat WAAR als de waarde een logische waarde is</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ISNB</td>
+            <td>ISNA</td>
+            <td>Geeft als resultaat WAAR als de waarde de foutwaarde #N/B is</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ISGEENTEKST</td>
+            <td>ISNONTEXT</td>
+            <td>Geeft als resultaat WAAR als de waarde geen tekst is</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ISGETAL</td>
+            <td>ISNUMBER</td>
+            <td>Geeft als resultaat WAAR als de waarde een getal is</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">IS.ONEVEN</td>
+            <td>ISODD</td>
+            <td>Geeft als resultaat WAAR als het getal oneven is</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ISVERWIJZING</td>
+            <td>ISREF</td>
+            <td>Geeft als resultaat WAAR als de waarde een verwijzing is</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ISTEKST</td>
+            <td>ISTEXT</td>
+            <td>Geeft als resultaat WAAR als de waarde tekst is</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">N</td>
+            <td>N</td>
+            <td>Geeft als resultaat een waarde die is geconverteerd naar een getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">NB</td>
+            <td>NA</td>
+            <td>Geeft als resultaat de foutwaarde #N/B</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">TYPE</td>
+            <td>TYPE</td>
+            <td>Geeft als resultaat een getal dat het gegevenstype van een waarde   aangeeft</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20"><strong>Logische functies</strong></td>
+            <td><strong>Logical functions</strong></td>
+            <td><strong></strong></td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">EN</td>
+            <td>AND</td>
+            <td>Geeft als resultaat WAAR als alle argumenten WAAR zijn</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ONWAAR</td>
+            <td>FALSE</td>
+            <td>Geeft als resultaat de logische waarde ONWAAR</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ALS</td>
+            <td>IF</td>
+            <td>Geeft een logische test aan</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ALS.FOUT</td>
+            <td>IFERROR</td>
+            <td>Retourneert een waarde die u opgeeft als een formule een fout oplevert,   anders wordt het resultaat van de formule geretourneerd</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">NIET</td>
+            <td>NOT</td>
+            <td>Keert de logische waarde van het argument om</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">OF</td>
+            <td>OR</td>
+            <td>Geeft als resultaat WAAR als minimaal een van de argumenten WAAR is</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">WAAR</td>
+            <td>TRUE</td>
+            <td>Geeft als resultaat de logische waarde WAAR</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20"><strong>Zoek- en verwijzingsfuncties</strong></td>
+            <td><strong>Lookup and reference functions</strong></td>
+            <td>&nbsp;</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ADRES</td>
+            <td>ADDRESS</td>
+            <td>Geeft als resultaat een verwijzing, in de vorm van tekst, naar &eacute;&eacute;n   bepaalde cel in een werkblad</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BEREIKEN</td>
+            <td>AREAS</td>
+            <td>Geeft als resultaat het aantal bereiken in een verwijzing</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">KIEZEN</td>
+            <td>CHOOSE</td>
+            <td>Kiest een waarde uit een lijst met waarden</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">KOLOM</td>
+            <td>COLUMN</td>
+            <td>Geeft als resultaat het kolomnummer van een verwijzing</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">KOLOMMEN</td>
+            <td>COLUMNS</td>
+            <td>Geeft als resultaat het aantal kolommen in een verwijzing</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">HORIZ.ZOEKEN</td>
+            <td>HLOOKUP</td>
+            <td>Zoekt in de bovenste rij van een matrix naar een bepaalde waarde en geeft   als resultaat de gevonden waarde in de opgegeven cel</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">HYPERLINK</td>
+            <td>HYPERLINK</td>
+            <td>Maakt een snelkoppeling of een sprong waarmee een document wordt geopend   dat is opgeslagen op een netwerkserver, een intranet of op internet</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">INDEX</td>
+            <td>INDEX</td>
+            <td>Kiest met een index een waarde uit een verwijzing of een matrix</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">INDIRECT</td>
+            <td>INDIRECT</td>
+            <td>Geeft als resultaat een verwijzing die wordt aangegeven met een   tekstwaarde</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ZOEKEN</td>
+            <td>LOOKUP</td>
+            <td>Zoekt naar bepaalde waarden in een vector of een matrix</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">VERGELIJKEN</td>
+            <td>MATCH</td>
+            <td>Zoekt naar bepaalde waarden in een verwijzing of een matrix</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">VERSCHUIVING</td>
+            <td>OFFSET</td>
+            <td>Geeft als resultaat een nieuwe verwijzing die is verschoven ten opzichte   van een bepaalde verwijzing</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">RIJ</td>
+            <td>ROW</td>
+            <td>Geeft als resultaat het rijnummer van een verwijzing</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">RIJEN</td>
+            <td>ROWS</td>
+            <td>Geeft als resultaat het aantal rijen in een verwijzing</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">RTG</td>
+            <td>RTD</td>
+            <td>Haalt realtimegegevens op uit een programma dat   COM-automatisering&nbsp;(automatisering: een methode waarmee de ene   toepassing objecten van een andere toepassing of ontwikkelprogramma kan   besturen. Automatisering werd vroeger OLE-automatisering genoemd. Automatisering   is een industrienorm die deel uitmaakt van het Component Object Model (COM).)   ondersteunt</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">TRANSPONEREN</td>
+            <td>TRANSPOSE</td>
+            <td>Geeft als resultaat de getransponeerde van een matrix</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">VERT.ZOEKEN</td>
+            <td>VLOOKUP</td>
+            <td>Zoekt in de meest linkse kolom van een matrix naar een bepaalde waarde en   geeft als resultaat de waarde in de opgegeven cel</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20"><strong>Wiskundige en trigonometrische functies</strong></td>
+            <td><strong>Math and trigonometry functions</strong></td>
+            <td>&nbsp;</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ABS</td>
+            <td>ABS</td>
+            <td>Geeft als resultaat de absolute waarde van een getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BOOGCOS</td>
+            <td>ACOS</td>
+            <td>Geeft als resultaat de boogcosinus van een getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BOOGCOSH</td>
+            <td>ACOSH</td>
+            <td>Geeft als resultaat de inverse cosinus hyperbolicus van een getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BOOGSIN</td>
+            <td>ASIN</td>
+            <td>Geeft als resultaat de boogsinus van een getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BOOGSINH</td>
+            <td>ASINH</td>
+            <td>Geeft als resultaat de inverse sinus hyperbolicus van een getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BOOGTAN</td>
+            <td>ATAN</td>
+            <td>Geeft als resultaat de boogtangens van een getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BOOGTAN2</td>
+            <td>ATAN2</td>
+            <td>Geeft als resultaat de boogtangens van de x- en y-co&ouml;rdinaten</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BOOGTANH</td>
+            <td>ATANH</td>
+            <td>Geeft als resultaat de inverse tangens hyperbolicus van een getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">AFRONDEN.BOVEN</td>
+            <td>CEILING</td>
+            <td>Rondt de absolute waarde van een getal naar boven af op het   dichtstbijzijnde gehele getal of het dichtstbijzijnde significante veelvoud</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">COMBINATIES</td>
+            <td>COMBIN</td>
+            <td>Geeft als resultaat het aantal combinaties voor een bepaald aantal   objecten</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">COS</td>
+            <td>COS</td>
+            <td>Geeft als resultaat de cosinus van een getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">COSH</td>
+            <td>COSH</td>
+            <td>Geeft als resultaat de cosinus hyperbolicus van een getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">GRADEN</td>
+            <td>DEGREES</td>
+            <td>Converteert radialen naar graden</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">EVEN</td>
+            <td>EVEN</td>
+            <td>Rondt het getal af op het dichtstbijzijnde gehele even getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">EXP</td>
+            <td>EXP</td>
+            <td>Verheft e tot de macht van een bepaald getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">FACULTEIT</td>
+            <td>FACT</td>
+            <td>Geeft als resultaat de faculteit van een getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DUBBELE.FACULTEIT</td>
+            <td>FACTDOUBLE</td>
+            <td>Geeft als resultaat de dubbele faculteit van een getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">AFRONDEN.BENEDEN</td>
+            <td>FLOOR</td>
+            <td>Rondt de absolute waarde van een getal naar beneden af</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">GGD</td>
+            <td>GCD</td>
+            <td>Geeft als resultaat de grootste gemene deler</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">INTEGER</td>
+            <td>INT</td>
+            <td>Rondt een getal naar beneden af op het dichtstbijzijnde gehele getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">KGV</td>
+            <td>LCM</td>
+            <td>Geeft als resultaat het kleinste gemene veelvoud</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">LN</td>
+            <td>LN</td>
+            <td>Geeft als resultaat de natuurlijke logaritme van een getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">LOG</td>
+            <td>LOG</td>
+            <td>Geeft als resultaat de logaritme met het opgegeven grondtal van een getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">LOG10</td>
+            <td>LOG10</td>
+            <td>Geeft als resultaat de logaritme met grondtal 10 van een getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DETERMINANTMAT</td>
+            <td>MDETERM</td>
+            <td>Geeft als resultaat de determinant van een matrix</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">INVERSEMAT</td>
+            <td>MINVERSE</td>
+            <td>Geeft als resultaat de inverse van een matrix</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">PRODUCTMAT</td>
+            <td>MMULT</td>
+            <td>Geeft als resultaat het product van twee matrices</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">REST</td>
+            <td>MOD</td>
+            <td>Geeft als resultaat het restgetal van een deling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">AFRONDEN.N.VEELVOUD</td>
+            <td>MROUND</td>
+            <td>Geeft als resultaat een getal afgerond op het gewenste veelvoud</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">MULTINOMIAAL</td>
+            <td>MULTINOMIAL</td>
+            <td>Geeft als resultaat de multinomiaalco&euml;ffici&euml;nt van een reeks getallen</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ONEVEN</td>
+            <td>ODD</td>
+            <td>Rondt de absolute waarde van het getal naar boven af op het   dichtstbijzijnde gehele oneven getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">PI</td>
+            <td>PI</td>
+            <td>Geeft als resultaat de waarde van pi</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">MACHT</td>
+            <td>POWER</td>
+            <td>Verheft een getal tot een macht</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">PRODUCT</td>
+            <td>PRODUCT</td>
+            <td>Vermenigvuldigt de argumenten met elkaar</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">QUOTIENT</td>
+            <td>QUOTIENT</td>
+            <td>Geeft als resultaat de uitkomst van een deling als geheel getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">RADIALEN</td>
+            <td>RADIANS</td>
+            <td>Converteert graden naar radialen</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ASELECT</td>
+            <td>RAND</td>
+            <td>Geeft als resultaat een willekeurig getal tussen 0 en 1</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ASELECTTUSSEN</td>
+            <td>RANDBETWEEN</td>
+            <td>Geeft een willekeurig getal tussen de getallen die u hebt opgegeven</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ROMEINS</td>
+            <td>ROMAN</td>
+            <td>Converteert een Arabisch getal naar een Romeins getal en geeft het   resultaat weer in de vorm van tekst</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">AFRONDEN</td>
+            <td>ROUND</td>
+            <td>Rondt een getal af op het opgegeven aantal decimalen</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">AFRONDEN.NAAR.BENEDEN</td>
+            <td>ROUNDDOWN</td>
+            <td>Rondt de absolute waarde van een getal naar beneden af</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">AFRONDEN.NAAR.BOVEN</td>
+            <td>ROUNDUP</td>
+            <td>Rondt de absolute waarde van een getal naar boven af</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SOM.MACHTREEKS</td>
+            <td>SERIESSUM</td>
+            <td>Geeft als resultaat de som van een machtreeks die is gebaseerd op de   formule</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">POS.NEG</td>
+            <td>SIGN</td>
+            <td>Geeft als resultaat het teken van een getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SIN</td>
+            <td>SIN</td>
+            <td>Geeft als resultaat de sinus van de opgegeven hoek</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SINH</td>
+            <td>SINH</td>
+            <td>Geeft als resultaat de sinus hyperbolicus van een getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">WORTEL</td>
+            <td>SQRT</td>
+            <td>Geeft als resultaat de positieve vierkantswortel van een getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">WORTEL.PI</td>
+            <td>SQRTPI</td>
+            <td>Geeft als resultaat de vierkantswortel van (getal * pi)</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SUBTOTAAL</td>
+            <td>SUBTOTAL</td>
+            <td>Geeft als resultaat een subtotaal voor een bereik</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SOM</td>
+            <td>SUM</td>
+            <td>Telt de argumenten op</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SOM.ALS</td>
+            <td>SUMIF</td>
+            <td>Telt de getallen bij elkaar op die voldoen aan een bepaald criterium</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SOMMEN.ALS</td>
+            <td>SUMIFS</td>
+            <td>Telt de cellen in een bereik op die aan meerdere criteria voldoen.</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SOMPRODUCT</td>
+            <td>SUMPRODUCT</td>
+            <td>Geeft als resultaat de som van de producten van de corresponderende   matrixelementen</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">KWADRATENSOM</td>
+            <td>SUMSQ</td>
+            <td>Geeft als resultaat de som van de kwadraten van de argumenten</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SOM.X2MINY2</td>
+            <td>SUMX2MY2</td>
+            <td>Geeft als resultaat de som van het verschil tussen de kwadraten van   corresponderende waarden in twee matrices</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SOM.X2PLUSY2</td>
+            <td>SUMX2PY2</td>
+            <td>Geeft als resultaat de som van de kwadratensom van corresponderende   waarden in twee matrices</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SOM.XMINY.2</td>
+            <td>SUMXMY2</td>
+            <td>Geeft als resultaat de som van de kwadraten van de verschillen tussen de   corresponderende waarden in twee matrices</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">TAN</td>
+            <td>TAN</td>
+            <td>Geeft als resultaat de tangens van een getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">TANH</td>
+            <td>TANH</td>
+            <td>Geeft als resultaat de tangens hyperbolicus van een getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">GEHEEL</td>
+            <td>TRUNC</td>
+            <td>Kapt een getal af tot een geheel getal</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20"><strong>Statistische functies</strong></td>
+            <td><strong>Statistical functions</strong></td>
+            <td><strong></strong></td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">GEM.DEVIATIE</td>
+            <td>AVEDEV</td>
+            <td>Geeft als resultaat het gemiddelde van de absolute deviaties van   gegevenspunten ten opzichte van hun gemiddelde waarde</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">GEMIDDELDE</td>
+            <td>AVERAGE</td>
+            <td>Geeft als resultaat het gemiddelde van de argumenten</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">GEMIDDELDEA</td>
+            <td>AVERAGEA</td>
+            <td>Geeft als resultaat het gemiddelde van de argumenten, inclusief getallen,   tekst en logische waarden</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">GEMIDDELDE.ALS</td>
+            <td>AVERAGEIF</td>
+            <td>Geeft het gemiddelde (rekenkundig gemiddelde) als resultaat van alle   cellen in een bereik die voldoen aan de opgegeven criteria</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">GEMIDDELDEN.ALS</td>
+            <td>AVERAGEIFS</td>
+            <td>Geeft het gemiddelde (rekenkundig gemiddelde) als resultaat van alle   cellen die aan meerdere criteria voldoen.</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BETA.VERD</td>
+            <td>BETADIST</td>
+            <td>Geeft als resultaat de cumulatieve b&egrave;ta-verdelingsfunctie</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BETA.INV</td>
+            <td>BETAINV</td>
+            <td>Geeft als resultaat de inverse van de cumulatieve verdelingsfunctie voor   een gegeven b&egrave;ta-verdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BINOMIALE.VERD</td>
+            <td>BINOMDIST</td>
+            <td>Geeft als resultaat de binomiale verdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">CHI.KWADRAAT</td>
+            <td>CHIDIST</td>
+            <td>Geeft als resultaat de eenzijdige kans van de chi-kwadraatverdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">CHI.KWADRAAT.INV</td>
+            <td>CHIINV</td>
+            <td>Geeft als resultaat de inverse van een eenzijdige kans van de   chi-kwadraatverdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">CHI.TOETS</td>
+            <td>CHITEST</td>
+            <td>Geeft als resultaat de onafhankelijkheidstoets</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BETROUWBAARHEID</td>
+            <td>CONFIDENCE</td>
+            <td>Geeft als resultaat het betrouwbaarheidsinterval van een gemiddelde   waarde voor de elementen van een populatie</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">CORRELATIE</td>
+            <td>CORREL</td>
+            <td>Geeft als resultaat de correlatieco&euml;ffici&euml;nt van twee   gegevensverzamelingen</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">AANTAL</td>
+            <td>COUNT</td>
+            <td>Telt het aantal getallen in de argumentenlijst</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">AANTALARG</td>
+            <td>COUNTA</td>
+            <td>Telt het aantal waarden in de argumentenlijst</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">AANTAL.LEGE.CELLEN</td>
+            <td>COUNTBLANK</td>
+            <td>Telt het aantal lege cellen in een bereik</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">AANTAL.ALS</td>
+            <td>COUNTIF</td>
+            <td>Telt in een bereik het aantal cellen die voldoen aan een bepaald   criterium</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">AANTALLEN.ALS</td>
+            <td>COUNTIFS</td>
+            <td>Telt in een bereik het aantal cellen die voldoen aan meerdere criteria</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">COVARIANTIE</td>
+            <td>COVAR</td>
+            <td>Geeft als resultaat de covariantie, het gemiddelde van de producten van   de gepaarde deviaties</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">CRIT.BINOM</td>
+            <td>CRITBINOM</td>
+            <td>Geeft als resultaat de kleinste waarde waarvoor de binomiale verdeling   kleiner is dan of gelijk is aan het criterium</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">DEV.KWAD</td>
+            <td>DEVSQ</td>
+            <td>Geeft als resultaat de som van de deviaties in het kwadraat</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">EXPON.VERD</td>
+            <td>EXPONDIST</td>
+            <td>Geeft als resultaat de exponenti&euml;le verdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">F.VERDELING</td>
+            <td>FDIST</td>
+            <td>Geeft als resultaat de F-verdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">F.INVERSE</td>
+            <td>FINV</td>
+            <td>Geeft als resultaat de inverse van de F-verdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">FISHER</td>
+            <td>FISHER</td>
+            <td>Geeft als resultaat de Fisher-transformatie</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">FISHER.INV</td>
+            <td>FISHERINV</td>
+            <td>Geeft als resultaat de inverse van de Fisher-transformatie</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">VOORSPELLEN</td>
+            <td>FORECAST</td>
+            <td>Geeft als resultaat een waarde op basis van een lineaire trend</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">FREQUENTIE</td>
+            <td>FREQUENCY</td>
+            <td>Geeft als resultaat een frequentieverdeling in de vorm van een verticale   matrix</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">F.TOETS</td>
+            <td>FTEST</td>
+            <td>Geeft als resultaat een F-toets</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">GAMMA.VERD</td>
+            <td>GAMMADIST</td>
+            <td>Geeft als resultaat de gamma-verdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">GAMMA.INV</td>
+            <td>GAMMAINV</td>
+            <td>Geeft als resultaat de inverse van de cumulatieve gamma-verdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">GAMMA.LN</td>
+            <td>GAMMALN</td>
+            <td>Geeft als resultaat de natuurlijke logaritme van de gamma-functie, G(x)</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">MEETK.GEM</td>
+            <td>GEOMEAN</td>
+            <td>Geeft als resultaat het meetkundige gemiddelde</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">GROEI</td>
+            <td>GROWTH</td>
+            <td>Geeft als resultaat de waarden voor een exponenti&euml;le trend</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">HARM.GEM</td>
+            <td>HARMEAN</td>
+            <td>Geeft als resultaat het harmonische gemiddelde</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">HYPERGEO.VERD</td>
+            <td>HYPGEOMDIST</td>
+            <td>Geeft als resultaat de hypergeometrische verdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SNIJPUNT</td>
+            <td>INTERCEPT</td>
+            <td>Geeft als resultaat het snijpunt van de lineaire regressielijn met de   y-as</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">KURTOSIS</td>
+            <td>KURT</td>
+            <td>Geeft als resultaat de kurtosis van een gegevensverzameling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">GROOTSTE</td>
+            <td>LARGE</td>
+            <td>Geeft als resultaat de op k-1 na grootste waarde in een   gegevensverzameling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">LIJNSCH</td>
+            <td>LINEST</td>
+            <td>Geeft als resultaat de parameters van een lineaire trend</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">LOGSCH</td>
+            <td>LOGEST</td>
+            <td>Geeft als resultaat de parameters van een exponenti&euml;le trend</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">LOG.NORM.INV</td>
+            <td>LOGINV</td>
+            <td>Geeft als resultaat de inverse van de logaritmische normale verdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">LOG.NORM.VERD</td>
+            <td>LOGNORMDIST</td>
+            <td>Geeft als resultaat de cumulatieve logaritmische normale verdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">MAX</td>
+            <td>MAX</td>
+            <td>Geeft als resultaat de maximumwaarde in een lijst met argumenten</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">MAXA</td>
+            <td>MAXA</td>
+            <td>Geeft als resultaat de maximumwaarde in een lijst met argumenten,   inclusief getallen, tekst en logische waarden</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">MEDIAAN</td>
+            <td>MEDIAN</td>
+            <td>Geeft als resultaat de mediaan van de opgegeven getallen</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">MIN</td>
+            <td>MIN</td>
+            <td>Geeft als resultaat de minimumwaarde in een lijst met argumenten</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">MINA</td>
+            <td>MINA</td>
+            <td>Geeft als resultaat de minimumwaarde in een lijst met argumenten,   inclusief getallen, tekst en logische waarden</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">MODUS</td>
+            <td>MODE</td>
+            <td>Geeft als resultaat de meest voorkomende waarde in een   gegevensverzameling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">NEG.BINOM.VERD</td>
+            <td>NEGBINOMDIST</td>
+            <td>Geeft als resultaat de negatieve binomiaalverdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">NORM.VERD</td>
+            <td>NORMDIST</td>
+            <td>Geeft als resultaat de cumulatieve normale verdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">NORM.INV</td>
+            <td>NORMINV</td>
+            <td>Geeft als resultaat de inverse van de cumulatieve standaardnormale   verdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">STAND.NORM.VERD</td>
+            <td>NORMSDIST</td>
+            <td>Geeft als resultaat de cumulatieve standaardnormale verdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">STAND.NORM.INV</td>
+            <td>NORMSINV</td>
+            <td>Geeft als resultaat de inverse van de cumulatieve normale verdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">PEARSON</td>
+            <td>PEARSON</td>
+            <td>Geeft als resultaat de correlatieco&euml;ffici&euml;nt van Pearson</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">PERCENTIEL</td>
+            <td>PERCENTILE</td>
+            <td>Geeft als resultaat het k-de percentiel van waarden in een bereik</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">PERCENT.RANG</td>
+            <td>PERCENTRANK</td>
+            <td>Geeft als resultaat de positie, in procenten uitgedrukt, van een waarde   in de rangorde van een gegevensverzameling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">PERMUTATIES</td>
+            <td>PERMUT</td>
+            <td>Geeft als resultaat het aantal permutaties voor een gegeven aantal   objecten</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">POISSON</td>
+            <td>POISSON</td>
+            <td>Geeft als resultaat de Poisson-verdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">KANS</td>
+            <td>PROB</td>
+            <td>Geeft als resultaat de kans dat waarden zich tussen twee grenzen bevinden</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">KWARTIEL</td>
+            <td>QUARTILE</td>
+            <td>Geeft als resultaat het kwartiel van een gegevensverzameling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">RANG</td>
+            <td>RANK</td>
+            <td>Geeft als resultaat het rangnummer van een getal in een lijst getallen</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">R.KWADRAAT</td>
+            <td>RSQ</td>
+            <td>Geeft als resultaat het kwadraat van de Pearson-correlatieco&euml;ffici&euml;nt</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SCHEEFHEID</td>
+            <td>SKEW</td>
+            <td>Geeft als resultaat de mate van asymmetrie van een verdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">RICHTING</td>
+            <td>SLOPE</td>
+            <td>Geeft als resultaat de richtingsco&euml;ffici&euml;nt van een lineaire   regressielijn</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">KLEINSTE</td>
+            <td>SMALL</td>
+            <td>Geeft als resultaat de op k-1 na kleinste waarde in een   gegevensverzameling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">NORMALISEREN</td>
+            <td>STANDARDIZE</td>
+            <td>Geeft als resultaat een genormaliseerde waarde</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">STDEV</td>
+            <td>STDEV</td>
+            <td>Maakt een schatting van de standaarddeviatie op basis van een steekproef</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">STDEVA</td>
+            <td>STDEVA</td>
+            <td>Maakt een schatting van de standaarddeviatie op basis van een steekproef,   inclusief getallen, tekst en logische waarden</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">STDEVP</td>
+            <td>STDEVP</td>
+            <td>Berekent de standaarddeviatie op basis van de volledige populatie</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">STDEVPA</td>
+            <td>STDEVPA</td>
+            <td>Berekent de standaarddeviatie op basis van de volledige populatie,   inclusief getallen, tekst en logische waarden</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">STAND.FOUT.YX</td>
+            <td>STEYX</td>
+            <td>Geeft als resultaat de standaardfout in de voorspelde y-waarde voor elke   x in een regressie</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">T.VERD</td>
+            <td>TDIST</td>
+            <td>Geeft als resultaat de Student T-verdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">T.INV</td>
+            <td>TINV</td>
+            <td>Geeft als resultaat de inverse van de Student T-verdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">TREND</td>
+            <td>TREND</td>
+            <td>Geeft als resultaat de waarden voor een lineaire trend</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">GETRIMD.GEM</td>
+            <td>TRIMMEAN</td>
+            <td>Geeft als resultaat het gemiddelde van waarden in een gegevensverzameling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">T.TOETS</td>
+            <td>TTEST</td>
+            <td>Geeft als resultaat de kans met behulp van de Student T-toets</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">VAR</td>
+            <td>VAR</td>
+            <td>Maakt een schatting van de variantie op basis van een steekproef</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">VARA</td>
+            <td>VARA</td>
+            <td>Maakt een schatting van de variantie op basis van een steekproef,   inclusief getallen, tekst en logische waarden</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">VARP</td>
+            <td>VARP</td>
+            <td>Berekent de variantie op basis van de volledige populatie</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">VARPA</td>
+            <td>VARPA</td>
+            <td>Berekent de standaarddeviatie op basis van de volledige populatie,   inclusief getallen, tekst en logische waarden</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">WEIBULL</td>
+            <td>WEIBULL</td>
+            <td>Geeft als resultaat de Weibull-verdeling</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">Z.TOETS</td>
+            <td>ZTEST</td>
+            <td>Geeft als resultaat de eenzijdige kanswaarde van een Z-toets</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20"><strong>Tekstfuncties</strong></td>
+            <td><strong>Text functions</strong></td>
+            <td><strong></strong></td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">ASC</td>
+            <td>ASC</td>
+            <td>Wijzigt Nederlandse letters of katakanatekens over de volle breedte   (dubbel-bytetekens) binnen een tekenreeks in tekens over de halve breedte   (enkel-bytetekens)</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BAHT.TEKST</td>
+            <td>BAHTTEXT</td>
+            <td>Converteert een getal naar tekst met de valutanotatie &szlig; (baht)</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">TEKEN</td>
+            <td>CHAR</td>
+            <td>Geeft als resultaat het teken dat hoort bij de opgegeven code</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">WISSEN.CONTROL</td>
+            <td>CLEAN</td>
+            <td>Verwijdert alle niet-afdrukbare tekens uit een tekst</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">CODE</td>
+            <td>CODE</td>
+            <td>Geeft als resultaat de numerieke code voor het eerste teken in een   tekenreeks</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">TEKST.SAMENVOEGEN</td>
+            <td>CONCATENATE</td>
+            <td>Voegt verschillende tekstfragmenten samen tot &eacute;&eacute;n tekstfragment</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">EURO</td>
+            <td>DOLLAR</td>
+            <td>Converteert een getal naar tekst met de valutanotatie &euro; (euro)</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">GELIJK</td>
+            <td>EXACT</td>
+            <td>Controleert of twee tekenreeksen identiek zijn</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">VIND.ALLES, VIND.ALLES.B</td>
+            <td>FIND, FINDB</td>
+            <td>Zoekt een bepaalde tekenreeks in een tekst (waarbij onderscheid wordt   gemaakt tussen hoofdletters en kleine letters)</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">VAST</td>
+            <td>FIXED</td>
+            <td>Maakt een getal als tekst met een vast aantal decimalen op</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">JIS</td>
+            <td>JIS</td>
+            <td>Wijzigt Nederlandse letters of katakanatekens over de halve breedte   (enkel-bytetekens) binnen een tekenreeks in tekens over de volle breedte   (dubbel-bytetekens)</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">LINKS, LINKSB</td>
+            <td>LEFT, LEFTB</td>
+            <td>Geeft als resultaat de meest linkse tekens in een tekenreeks</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">LENGTE, LENGTEB</td>
+            <td>LEN, LENB</td>
+            <td>Geeft als resultaat het aantal tekens in een tekenreeks</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">KLEINE.LETTERS</td>
+            <td>LOWER</td>
+            <td>Zet tekst om in kleine letters</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">MIDDEN, DEELB</td>
+            <td>MID, MIDB</td>
+            <td>Geeft als resultaat een bepaald aantal tekens van een tekenreeks vanaf de   positie die u opgeeft</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">FONETISCH</td>
+            <td>PHONETIC</td>
+            <td>Haalt de fonetische tekens (furigana) uit een tekenreeks op</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">BEGINLETTERS</td>
+            <td>PROPER</td>
+            <td>Zet de eerste letter van elk woord in een tekst om in een hoofdletter</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">VERVANG,VERVANGENB</td>
+            <td>REPLACE, REPLACEB</td>
+            <td>Vervangt tekens binnen een tekst</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">HERHALING</td>
+            <td>REPT</td>
+            <td>Herhaalt een tekst een aantal malen</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">RECHTS, RECHTSB</td>
+            <td>RIGHT, RIGHTB</td>
+            <td>Geeft als resultaat de meest rechtse tekens in een tekenreeks</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">VIND.SPEC, VIND.SPEC.B</td>
+            <td>SEARCH, SEARCHB</td>
+            <td>Zoekt een bepaalde tekenreeks in een tekst (waarbij geen onderscheid   wordt gemaakt tussen hoofdletters en kleine letters)</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SUBSTITUEREN</td>
+            <td>SUBSTITUTE</td>
+            <td>Vervangt oude tekst door nieuwe tekst in een tekenreeks</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">T</td>
+            <td>T</td>
+            <td>Converteert de argumenten naar tekst</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">TEKST</td>
+            <td>TEXT</td>
+            <td>Maakt een getal op en converteert het getal naar tekst</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">SPATIES.WISSEN</td>
+            <td>TRIM</td>
+            <td>Verwijdert de spaties uit een tekst</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">HOOFDLETTERS</td>
+            <td>UPPER</td>
+            <td>Zet tekst om in hoofdletters</td>
+            </tr>
+            <tr style="height: 15pt;" height="20">
+            <td style="height: 15pt;" height="20">WAARDE</td>
+            <td>VALUE</td>
+            <td>Converteert tekst naar een getal</td>
+            </tr>
+            </tbody>
+        </table>
+	</body>
+</html>

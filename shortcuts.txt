@@ -1,0 +1,38 @@
+{
+    "linkgroup": [	
+		{
+			"linkGroupName": "Algemeen"
+			"linkGroupItems":[
+				{
+					"group":"no",
+					"links":[
+						{
+							"href":"https://www.buienradar.nl",
+							"title":"buitenradar"
+						}
+					]
+				}
+				{
+					"group":"yes",
+					"groupTitle":"Forums",
+					"links":[
+						{
+							"href":"https://answers.microsoft.com/nl-nl",
+							"title":"Microsoft Forums"
+						},
+						{
+							"href":"https://forum.openstreetmap.org",
+							"title":"OSM forums"
+						},
+						{
+							"href":"https://forum.vivaldi.net",
+							"title":"Vivaldi Forums"
+						}
+					]
+					
+				}
+			]
+
+		}
+	]
+}

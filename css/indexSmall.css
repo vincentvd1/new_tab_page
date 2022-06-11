@@ -1,0 +1,200 @@
+@media only screen and (max-width: 600px) {
+  
+:root{
+	--contentWidth:100vw;
+	--sidebarWidth:70vw;
+	--searchBarPanelTopOffset: 5vh;
+	--contentPadding: 20px;
+	--searchEngineIndicator: 120px;
+	--menubuttonwidth: 0px;
+    --searchbuttonwidth: 40px;
+	--searchbarheight: 40px;
+	--linkMargin: 3px;
+	--linkMarginTop: 3px;
+	--SearchFieldWidth: calc(100% - var(--searchbuttonwidth) - var(--searchEngineIndicator) - var(--menubuttonwidth) + 10px);
+	--linkwidth:calc((var(--contentWidth) - (2 * var(--contentPadding))) /2 - (2 * var(--linkMargin)) );
+	--linkheight: calc(var(--linkwidth) * .5);
+	--searchBarWidth:calc(var(--SearchFieldWidth) + var(--searchbuttonwidth) - 10px);
+	}
+
+.CloseBar{
+	display:block;
+}
+
+/*pagina-elementen*/
+.sidebar{
+	width:var(--sidebarWidth);
+	margin-left:-100%;
+}
+.content{
+	width:calc(var(--contentWidth) - (2 * var(--contentPadding)));
+}
+
+
+/*zoekveld*/
+.SearchBarVert{
+
+}
+	.SearchBarHor{
+
+	}
+		.searchEngineIndicator{
+
+		}
+			.searchEngineIndicator > p{
+
+			}
+		.SearchButton, .SearchField{
+
+		}
+			.SearchButton > img{
+
+			}
+        .Searchfield{
+
+        }
+			.SearchField:focus{
+				
+			}
+        .SearchButton{
+		}
+		.blackHover:hover{
+			
+		}
+		.searchOptionsSuggestion{
+
+		}
+			.SOSvisible{
+				
+			}
+			.searchOptionsSuggestion > div > p{
+				
+			}
+			
+		.AdvancedSearch{
+
+		}
+            .asvisible{
+                
+            }       
+            .ASGroup{
+                
+            }
+                .ASGGroupHeader{
+					
+                }
+                .ASGroupContent{
+                }
+                .ASGroupContent > div{
+					width:calc(100% / 2);
+                }
+				.ASGGroupHeader > p{
+				
+				}
+                .searchOptionName{
+                    
+                }
+				.searchOptionAction{
+				
+				}
+                .searchOption:hover{
+                    
+                } 
+				.searchOption:hover > p.searchOptionAction{
+                    
+                } 
+
+/* shortcuts*/
+/*Link catogories tab*/
+.CategoryBar{
+	
+}
+	.CategoryBarPlacement{
+		
+	}
+		.catPanel{
+			
+		}
+			.CategoryBarItem{
+				width:100%;
+				
+			}
+				.CategoryBarItem > p{
+	
+				}
+			.CategoryBarItem:hover{
+				
+			}
+			.CategoryBarItemActive{
+				
+			}
+			.CategoryBarItemActive > p{
+				
+			}
+			.cat-symbol{
+				
+			}
+		
+	
+/*settings panel*/
+	.settings{
+		left: 0px;
+		width:100vh;
+		z-index:15;
+	}
+		.settingsContent{
+			padding:10px;
+		}
+
+/* link groups */		
+.linkgroup{
+
+}
+.active{ /*active linkgroup*/
+	
+}
+	.link-tile{
+		width:var(--linkwidth);
+		height:var(--linkheight);
+	}
+	.Mlink-group, .link-tile{
+
+	}
+	.link-tile:hover{
+	}
+		.link-content{
+		
+		}
+			.linkTitle{
+				
+			}
+		.Mlink-group{ /*MLink-items parent*/
+	
+		}
+			.Mlink-item{  /*MLink group href items*/
+
+				height:60px;
+			}
+			.Mlink-item:hover{  /*MLink group href items*/
+			
+			}
+			
+/*message bar*/
+.message_banner{
+ 
+}
+.message_banner > p{
+
+}
+
+/*class to hide objects with class distract*/
+.distractHide{
+    
+}
+
+/*class to hide objects with class hide*/
+.hide{
+    
+}
+}
+

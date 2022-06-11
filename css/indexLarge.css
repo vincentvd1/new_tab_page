@@ -1,0 +1,205 @@
+@media only screen and (min-width: 600px) {
+  
+:root{
+	--sidebarWidth:250px;
+	--contentWidth:calc(100vw - var(--sidebarWidth));
+	--contentPadding: 20px;
+	--linkGroupWidth: calc((var(--contentWidth) -  2 * var(--contentPadding)) * 0.695);
+	--widgetWidth: calc((var(--contentWidth) - 2 * var(--contentPadding)) * 0.295);
+	--searchBarPanelTopOffset: 10vh;
+	--searchEngineIndicator: 120px;
+	--menubuttonwidth: 0px;
+    --searchbuttonwidth: 40px;
+	--searchbarheight: 40px;
+	--linkMargin: 3px;
+	--linkMarginTop: 3px;
+	--SearchFieldWidth: calc(100% - var(--searchEngineIndicator) - var(--searchbuttonwidth) - var(--menubuttonwidth) + 10px);
+	--linkwidth:calc(var(--linkGroupWidth)/3 - (2 * var(--linkMargin)) );
+	--linkheight: calc(var(--linkwidth) * .5);
+	--searchBarWidth:calc(var(--SearchFieldWidth) + var(--searchEngineIndicator) + var(--searchbuttonwidth) - 10px);
+}
+
+.CloseBar{
+	display:none;
+}
+			
+/*pagina-elementen*/
+.sidebar{
+	width:var(--sidebarWidth);
+	margin-left:0px;
+}
+.content{
+	width:calc(var(--contentWidth) - (2 * var(--contentPadding)));
+}
+.linkgroups{
+	width:var(--linkGroupWidth);
+}
+.widget{
+	width:var(--widgetWidth);
+}
+
+/*zoekveld*/
+.SearchBarVert{
+	
+}
+	.SearchBarHor{
+
+	}
+		.searchEngineIndicator{
+			display:inline-block;
+		}
+			.searchEngineIndicator > p{
+
+			}
+		.SearchButton, .SearchField{
+
+		}
+			.SearchButton > img{
+
+			}
+        .Searchfield{
+
+        }
+			.SearchField:focus{
+				
+			}
+        .SearchButton{
+		}
+		.blackHover:hover{
+			
+		}
+		.searchOptionsSuggestion{
+
+		}
+			.SOSvisible{
+			}
+			.searchOptionsSuggestion > div > p{
+				
+			}
+			
+		.AdvancedSearch{
+
+		}
+            .asvisible{
+                
+            }       
+            .ASGroup{
+                
+            }
+                .ASGGroupHeader{
+					
+                }
+                .ASGroupContent{
+					
+                }
+                .ASGroupContent > div{
+					width:calc(100% / 5);
+                }
+				.ASGGroupHeader > p{
+
+				}
+                .searchOptionName{
+                  
+                }
+				.searchOptionAction{
+					
+				}
+                .searchOption:hover{
+                   
+                } 
+				.searchOption:hover > p.searchOptionAction{
+                   
+                } 
+
+/* shortcuts*/
+/*Link catogories tab*/
+.CategoryBar{
+	
+}
+	.CategoryBarPlacement{
+		
+	}
+		.catPanel{
+			
+		}
+			.CategoryBarItem{
+				
+				width:100%;
+			
+			}
+				.CategoryBarItem > p{
+					
+				}
+			.CategoryBarItem:hover{
+
+			}
+			.CategoryBarItemActive{
+			}
+			.CategoryBarItemActive > p{
+				
+			}
+			.cat-symbol{
+				
+			}
+		
+	
+/*settings panel*/
+	.settings{
+		z-index:-1;
+		left: var(--sidebarWidth);
+		width:auto;
+	}
+		.settingsContent{
+			padding:10px;
+		}
+
+/* link groups */		
+.linkgroup{
+	;
+}
+.active{ /*active linkgroup*/
+	
+}
+	.link-tile{
+		width:var(--linkwidth);
+		height:var(--linkheight);
+	}
+	.Mlink-group, .link-tile{
+
+	}
+	.link-tile:hover{
+	}
+		.link-content{
+	
+		}
+			.linkTitle{
+				
+			}
+		.Mlink-group{ /*MLink-items parent*/
+
+		}
+			.Mlink-item{  /*MLink group href items*/
+				height:50px;
+			}
+			.Mlink-item:hover{  /*MLink group href items*/
+			}
+			
+/*message bar*/
+.message_banner{
+  
+}
+.message_banner > p{
+
+}
+
+/*class to hide objects with class distract*/
+.distractHide{
+    
+}
+
+/*class to hide objects with class hide*/
+.hide{
+    
+}
+}
+
