@@ -2,10 +2,8 @@
 
 //globale variable
 var fade_time = 250; //fade time objecten
-var backupSearchEngine = 'qw';
+var backupSearchEngine = 'bv';
 var searchOptions = {
-					sc: ['ssc', 'insertFirst','Swisscows', 'https://swisscows.com', '/web?query=%s'],
-					sci: ['ssc', 'insertFirst','Swisscows img', 'https://swisscows.com', '/image?query=%s'],
                     ddg: ['ssc', 'insertFirst','DuckDuckGo', 'https://duckduckgo.com', '/?q=%s'], 
                     gg: ['ssc', 'insertFirst','Google', 'https://www.google.nl', '/search?q=%s'], 
                     ggm: ['ssc', 'insertFirst','Google maps', 'https://www.google.nl', '/maps/place/%s'],
@@ -14,18 +12,13 @@ var searchOptions = {
                     mas: ['ssc', 'insertFirst','Ms scholar', 'https://academic.microsoft.com', '/search?q=%s&f=&orderBy=0&skip=0&take=10'],
 					osm: ['ssc', 'insertFirst','Openstreetmap', 'https://www.openstreetmap.org', '/search?query=%s'], 
                     osmw: ['ssc', 'insertFirst','OSM wiki', 'https://lgms.nl/p/osm/cached-wiki/', '?search=%s&title=Special:Search&fulltext=Search'],
-					osmwold: ['ssc', 'insertFirst','OSM wiki source', 'https://wiki.openstreetmap.org', '/w/index.php?search=%s&title=Special%3ASearch&profile=default&fulltext=1'],
+					osmws: ['ssc', 'insertFirst','OSM wiki source', 'https://wiki.openstreetmap.org', '/w/index.php?search=%s&title=Special%3ASearch&profile=default&fulltext=1'],
 					pi: ['ssc', 'insertFirst','Pinterest', 'https://nl.pinterest.com', '/search/pins/?q=%s'], 
                     qw: ['ssc', 'insertFirst','Qwant', 'https://www.qwant.com', '/?q=%s'], 
                     qwi: ['ssc', 'insertFirst','Qwant images', 'https://www.qwant.com', '/?q=%s&t=images'], 
                     qwm: ['ssc', 'insertFirst','Qwant maps', 'https://www.qwant.com', '/maps/?q=%s'], 
                     yt: ['ssc', 'insertFirst','Youtube', 'https://www.youtube.com', '/results?search_query=%s'],
-					vf: ['ssc', 'insertFirst', 'Vivaldi Forums', 'https://forum.vivaldi.net/', 'search?term=%s&in=titles&matchWords=all&categories[]=185&categories[]=127&categories[]=128&categories[]=195&categories[]=196&categories[]=194&categories[]=129&categories[]=130&categories[]=131&categories[]=132&categories[]=133&sortBy=relevance&sortDirection=desc&showAs=topics'],
-					wub: ['ssc', 'insertFirst', 'WUR bieb', 'https://wur.on.worldcat.org', '/search?queryString=%s' ],
-					bl:['ssc','insertFirst', 'Blacklight', 'https://themarkup.org', '/blacklight?url=%s'],
-					sp:['ssc','insertFirst', 'Startpage', 'https://www.startpage.com','/sp/search?q=%s'],
 					bv:['ssc','insertFirst', 'Brave Search', 'https://search.brave.com', '/search?q=%s'],
-					you:['ssc', 'insertFirst', 'You Search', 'https://you.com/', 'search?q=%s'],
 					ipfslocal:['ssc', 'insertFirst', 'IPFS local node', 'http://localhost:8080/ipfs/%s', ''],
 					ipfsweb:['ssc', 'insertFirst', 'IPFS web', 'https://ipfs.io/ipfs/%s', ''],
 					searchFileType: ['so', 'insertAfter', 'Zoek op bestandstype','filetype: '],
